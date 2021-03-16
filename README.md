@@ -1,0 +1,2 @@
+# PAMO
+Pamo lectures PJATK
