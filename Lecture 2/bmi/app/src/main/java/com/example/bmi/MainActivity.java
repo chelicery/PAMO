@@ -1,5 +1,6 @@
 package com.example.bmi;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,27 +10,26 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity {
     private static EditText w,h;
     private TextView result;
     private String calculation, BMIresult;
     private Button bmrButton;
-    public static int SPLASH_TIME_OUT = 5000;
-
+    public static int SPLASH_TIME_OUT = 4000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(new Runnable() {
             @Override
-            public void run() {
+            public void run(){
                 Intent homeIntent = new Intent(MainActivity.this, WelcomeScreen.class);
                 startActivity(homeIntent);
                 finish();
             }
-        });
+        },SPLASH_TIME_OUT);
+
+
         w  = findViewById(R.id.weight);
         h  = findViewById(R.id.height);
         result = findViewById(R.id.result);

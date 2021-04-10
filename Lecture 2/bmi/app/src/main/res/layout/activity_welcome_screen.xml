@@ -16,11 +16,11 @@
         android:textSize="30dp" />
 
     <ImageView
+
         android:id="@+id/imageView"
         android:layout_width="256sp"
         android:layout_height="256sp"
-        android:gravity="center_horizontal"
-
+        android:gravity="center_horizontal|center_vertical"
         android:visibility="visible"
         app:srcCompat="@drawable/ic_logotyp" />
 
