@@ -10,15 +10,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class bmi_Calculator extends AppCompatActivity {
+
     private static EditText w,h;
     private TextView result;
     private String calculation, BMIresult;
     private Button bmrButton;
+    public static int SPLASH_TIME_OUT = 220;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         w  = findViewById(R.id.weight);
         h  = findViewById(R.id.height);
         result = findViewById(R.id.result);
@@ -51,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
     public static EditText getH(){
         return h;
     }
-
-
 
 
 }
