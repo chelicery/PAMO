@@ -51,9 +51,9 @@ public class BMR_calculator extends AppCompatActivity {
         int age = Integer.parseInt(a.getText().toString());
 
         if (gender == "m"){
-            bmr = 66 + (13.7f*weight) + (1.8f*height) - (4.7f*age);
+            bmr = 66.5f + (13.7f*weight) + (5*height) - (6.76f*age);
         } else if (gender == "f"){
-            bmr = 655 + (9.6f*weight) + (5*height) - (6.8f*age);
+            bmr = 655.1f + (9.6f*weight) + (1.8f*height) - (5.68f*age);
         } else {
             calculation = "Check your gender";
             bmr = 2;
@@ -64,7 +64,7 @@ public class BMR_calculator extends AppCompatActivity {
             calculation = "Fulfill BMI first";
         };
         int cheesburgerLeft = (int)bmr / 303;
-        cheesburgers = " " + cheesburgerLeft + " cheesburgers daily in CoronaVirus Times" ;
+        cheesburgers = "You can eat " + cheesburgerLeft + " cheesburgers daily in CoronaVirus Times" ;
         chees.setText(cheesburgers);
         result.setText(calculation);
     }

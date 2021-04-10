@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:height="100px"
-        android:text="@string/gender:"
+        android:text="@string/gender"
         android:textSize="20dp" />
     <RadioGroup
         android:id="@+id/RadioGender"
