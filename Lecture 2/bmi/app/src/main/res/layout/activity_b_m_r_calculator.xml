@@ -31,7 +31,7 @@
         android:height="100px"
         android:layout_gravity="center_horizontal"/>
     <RadioGroup
-        android:id="@+id/RadioGroup1"
+        android:id="@+id/RadioGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
