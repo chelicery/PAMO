@@ -91,6 +91,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="25dp"
-        android:text="Answer few questions about covid"
+        android:text="@string/covid"
         android:textSize="20dp" />/>
 </LinearLayout>

@@ -15,4 +15,6 @@
     <string name="result">Result</string>
     <string name="gender">Gender:</string>
     <string name="age">Age:</string>
+    <string name="covid">Answer few questions about covid</string>
+
 </resources>
